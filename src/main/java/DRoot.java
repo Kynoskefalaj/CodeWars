@@ -24,6 +24,7 @@ public class DRoot {
         if (sum - 9 <= 0){
             return sum;
         }
+
         return digital_root(sum);
     }
 
@@ -39,4 +40,9 @@ public class DRoot {
         }
         return digitsList;
     }
+
+    public static int digital_root2(int n) {
+        return (n != 0 && n%9 == 0) ? 9 : n % 9;
+    }
+
 }
