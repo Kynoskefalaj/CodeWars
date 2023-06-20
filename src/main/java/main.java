@@ -8,5 +8,8 @@ public class main {
         System.out.println(FindOdd.findIt(new int[] {1,2,3,4,5,4,3,2,1}));
 
         System.out.println(BinaryAddition.binaryAddition(1, 10));
+
+        System.out.println(WhoLikesIt.whoLikesIt("John", "Sarah", "Michael", "Steve"));
+        System.out.println(WhoLikesIt.whoLikesIt("John", "Sarah"));
     }
 }
