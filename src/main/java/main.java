@@ -11,5 +11,8 @@ public class main {
 
         System.out.println(WhoLikesIt.whoLikesIt("John", "Sarah", "Michael", "Steve"));
         System.out.println(WhoLikesIt.whoLikesIt("John", "Sarah"));
+
+        System.out.println(WhoLikesIt.whoLikesIt2("John", "Sarah", "Michael", "Steve"));
+        System.out.println(WhoLikesIt.whoLikesIt2("John", "Sarah"));
     }
 }
