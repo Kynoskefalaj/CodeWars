@@ -14,5 +14,6 @@ public class main {
 
         System.out.println(WhoLikesIt.whoLikesIt2("John", "Sarah", "Michael", "Steve"));
         System.out.println(WhoLikesIt.whoLikesIt2("John", "Sarah"));
+        System.out.println(HumanReadableTime.makeReadable(867458565));
     }
 }
