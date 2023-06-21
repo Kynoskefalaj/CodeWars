@@ -27,4 +27,12 @@ public class HumanReadableTime {
 
         return String.format("%s:%s:%s", strHours, strMinutes, strSec);
     }
+
+    public static String makeReadable2(int seconds) {
+        int h = seconds / 3600;
+        int min = seconds % 3600 / 60;
+        int sec = seconds % 60;
+
+        return String.format("%02d:%02d:%02d", h, min, sec);
+    }
 }
