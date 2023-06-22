@@ -17,5 +17,7 @@ public class main {
         System.out.println(HumanReadableTime.makeReadable(867458565));
         System.out.println(HumanReadableTime.makeReadable2(458565));
 
+        System.out.println(Scramblies.scramble("hakfdk2o2penom", "pokem22on"));
+
     }
 }
