@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class main {
 
     public static void main(String[] args) {
@@ -18,6 +21,8 @@ public class main {
         System.out.println(HumanReadableTime.makeReadable2(458565));
 
         System.out.println(Scramblies.scramble("hakfdk2o2penom", "pokem22on"));
+        System.out.println(Arrays.toString(TwoSum.twoSum(new int[] {1, 2, 4, 4}, 8)));
+        System.out.println(Arrays.toString(TwoSum.twoSum(new int[] {2,3,1}, 4)));
 
     }
 }
