@@ -24,5 +24,7 @@ public class main {
         System.out.println(Arrays.toString(TwoSum.twoSum(new int[] {1, 2, 4, 4}, 8)));
         System.out.println(Arrays.toString(TwoSum.twoSum(new int[] {2,3,1}, 4)));
 
+        System.out.println(FindOutlier.find(new int[] {2, 34, 4, 42, 48, 52, 7}));
+
     }
 }
