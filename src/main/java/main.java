@@ -28,5 +28,7 @@ public class main {
 
         System.out.println(Arrays.toString(Xbonacci.tribonacci(new double[]{1, 4, 6}, 14)));
         System.out.println(Arrays.toString(Xbonacci.tribonacci(new double[]{1, 4, 6}, 14)));
+
+        System.out.println("Fibonacci contains cci: " + StringEnding.stringEnding("Fibonacci", "cci"));
     }
 }
