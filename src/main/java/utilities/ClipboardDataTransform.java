@@ -1,3 +1,5 @@
+package utilities;
+
 import java.awt.*;
 import java.awt.datatransfer.*;
 import java.io.IOException;
@@ -36,6 +38,8 @@ public class ClipboardDataTransform {
     }
 
     private static String transformToCommaSeparated (String data) {
-        return data.replace("\n", ", ");
+        return data.replace("gp.tileSize*2", "localScale");
     }
 }
+
+

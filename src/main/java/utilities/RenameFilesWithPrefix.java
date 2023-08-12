@@ -1,12 +1,14 @@
+package utilities;
+
 import java.io.File;
 
 public class RenameFilesWithPrefix {
 
     public static void main(String[] args) {
 
-        String folderPath = "C:\\Users\\adamg\\Pictures\\Assety\\PixelArt\\Verdant Whisker\\VFX\\Arcane_Missile\\down\\";
+        String folderPath = "C:\\Users\\adamg\\Pictures\\Assety\\PixelArt\\Verdant Whisker\\Skeleton_Mage\\combat\\dying\\right\\";
 
-        String prefix = "am_down_";
+        String prefix = "skeleton_mage_dying_right_";
 
         File folder = new File(folderPath);
         File[] listOfFiles = folder.listFiles();
@@ -15,6 +17,7 @@ public class RenameFilesWithPrefix {
             for (File file : listOfFiles) {
                 if (file.isFile() && file.getName().endsWith(".png")) {
                     String oldName = file.getName();
+//                    String suffix = oldName.replace("deb_right_", "");
 
                     String newName = prefix + oldName;
 
