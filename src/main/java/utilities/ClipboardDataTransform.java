@@ -38,7 +38,20 @@ public class ClipboardDataTransform {
     }
 
     private static String transformToCommaSeparated (String data) {
-        return data.replace("gp.tileSize*2", "localScale");
+        return data.replace("false", "true        setUp(12, \"water/Water00\", true);\n" +
+                "        setUp(13, \"water/Water01\", true);\n" +
+                "        setUp(14, \"water/Water02\", true);\n" +
+                "        setUp(15, \"water/Water03\", true);\n" +
+                "        setUp(16, \"water/Water04\", true);\n" +
+                "        setUp(17, \"water/Water05\", true);\n" +
+                "        setUp(18, \"water/Water06\", true);\n" +
+                "        setUp(19, \"water/Water07\", true);\n" +
+                "        setUp(20, \"water/Water08\", true);\n" +
+                "        setUp(21, \"water/Water09\", true);\n" +
+                "        setUp(22, \"water/Water10\", true);\n" +
+                "        setUp(23, \"water/Water11\", true);\n" +
+                "        setUp(24, \"water/Water12\", true);\n" +
+                "        setUp(25, \"water/Water13\", true);");
     }
 }
 

@@ -63,11 +63,8 @@ public class FindAndReplace {
     }
 
     public void setReplacementMap() {
-        replacementMap.put("41", "4");
-        replacementMap.put("40", "1");
-        replacementMap.put("43", "3");
-        replacementMap.put("10", "3");
-        replacementMap.put("44", "0");
+        replacementMap.put("41", "58");
+        replacementMap.put("43", "44");
     }
 
     public void writeValues() {
@@ -84,7 +81,12 @@ public class FindAndReplace {
 
                 for (String sign : line) {
                     newValue = replacementMap.get(sign);
-                    newLine += newValue + regEx;
+                    if (newValue != null) {
+                        newLine += newValue + regEx;
+                    }
+                    else {
+                        newLine += sign + regEx;
+                    }
                 }
                 bw.write(newLine);
                 bw.newLine();

@@ -6,9 +6,10 @@ public class RenameFilesWithPrefix {
 
     public static void main(String[] args) {
 
-        String folderPath = "C:\\Users\\adamg\\Pictures\\Assety\\PixelArt\\Verdant Whisker\\Skeleton_Mage\\combat\\dying\\right\\";
+        String folderPath = "C:\\Users\\adamg\\Pictures\\Assety\\PixelArt\\Verdant Whisker\\TileSet2\\Water\\";
 
         String prefix = "skeleton_mage_dying_right_";
+        String suffix = "0";
 
         File folder = new File(folderPath);
         File[] listOfFiles = folder.listFiles();
@@ -19,7 +20,9 @@ public class RenameFilesWithPrefix {
                     String oldName = file.getName();
 //                    String suffix = oldName.replace("deb_right_", "");
 
-                    String newName = prefix + oldName;
+//                    String newName = prefix + oldName;
+                    String[] splitOldName = oldName.split(".p");
+                    String newName = splitOldName[0] + suffix + ".p" + splitOldName[1];
 
                     File newFile = new File(folderPath + newName);
 
