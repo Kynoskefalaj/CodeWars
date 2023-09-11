@@ -1,22 +1,16 @@
 package fundamentals;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 
 public class FindUniqueNumber {
     public static double findUniqueNumber(double arr[]) {
 
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] != arr[0]) {
-                for (int j = i+1; j < arr.length; j++) {
-                    if (arr[j] == arr[0]) {
-                        return arr[i];
-                    } else {
-                        return arr[0];
-                    }
-                }
-            }
-        } return 0;
+        Arrays.sort(arr);
+        return arr[0] == arr[1] ? arr[arr.length - 1] : arr[0];
     }
 
     private double precision = 0.0000000000001;
