@@ -66,7 +66,7 @@ public class FindEvenIndex {
     }
 
     private static int randInt(int min, int max) {
-        return min + (int)(Math.random() * ((max - min) + 1));
+        return min + (int)(Math.random() * ((max - min)));
     }
     private static int addList(ArrayList<Integer> list) {
         return list.stream().mapToInt(Integer::intValue).sum();
